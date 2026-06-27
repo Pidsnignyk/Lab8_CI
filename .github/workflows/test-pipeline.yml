@@ -33,4 +33,5 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+            export PYTHONPATH=$GITHUB_WORKSPACE
+            python -m pytest -v
